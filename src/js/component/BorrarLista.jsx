@@ -2,7 +2,7 @@ import React from "react";
 
 const BorrarLista =(props)=>{
     const borrar = ()=>{
-        fetch('http://assets.breatheco.de/apis/fake/todos/user/lrobles',{
+        fetch('https://assets.breatheco.de/apis/fake/todos/user/lrobles',{
             method:"DELETE",
             headers: {
                 "Content-Type": "application/json"

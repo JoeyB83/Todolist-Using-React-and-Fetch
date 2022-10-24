@@ -9,7 +9,7 @@ const Home = () => {
 
 	const [lista, setLista] = useState([]);
 
-	fetch('http://assets.breatheco.de/apis/fake/todos/user/lrobles', {
+	fetch('https://assets.breatheco.de/apis/fake/todos/user/lrobles', {
 		method: "GET",
 		headers: {
 			"Content-Type": "application/json"
@@ -19,7 +19,7 @@ const Home = () => {
 			console.log(resp.status)
 			if(resp.status== 404){
 				console.log("NO SE ENCUENTRA")
-				fetch('http://assets.breatheco.de/apis/fake/todos/user/lrobles', {
+				fetch('https://assets.breatheco.de/apis/fake/todos/user/lrobles', {
 					method: "POST",
 					body: "[]",
 					headers: {

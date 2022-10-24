@@ -22,7 +22,7 @@ const Tarea = (props)=>{
         })
     })
     console.log(newArr)
-    fetch('http://assets.breatheco.de/apis/fake/todos/user/lrobles',{
+    fetch('https://assets.breatheco.de/apis/fake/todos/user/lrobles',{
         method:"PUT",
         body: JSON.stringify(newArr),
         headers: {
